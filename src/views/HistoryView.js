@@ -22,8 +22,8 @@ export default class HistoryView extends KeywordView {
   }
 
   bindRemoveBtn() {
-    Array.from(this.el.querySelectorAll("button.btn-remove")).forEach(btn => {
-      btn.addEventListener("click", e => {
+    Array.from(this.el.querySelectorAll("button.btn-remove")).forEach((btn) => {
+      btn.addEventListener("click", (e) => {
         e.stopPropagation();
         this.onRemove(btn.parentElement.dataset.keyword);
       });
